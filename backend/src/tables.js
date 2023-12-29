@@ -3,11 +3,10 @@
 /* ************************************************************************* */
 
 // Import the manager modules responsible for handling data operations on the tables
-const ItemManager = require("./models/ItemManager");
+const TaskManager = require("./models/TaskManager");
 
 const managers = [
-  ItemManager,
-  // Add other managers here
+  TaskManager, // Add other managers here
 ];
 
 // Create an empty object to hold data managers for different tables
