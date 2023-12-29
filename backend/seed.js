@@ -20,12 +20,12 @@ const seed = async () => {
     // Generating Seed Data
 
     // Optional: Truncate tables (remove existing data)
-    await database.query("truncate tasks");
+    await database.query("truncate task");
 
     // Insert fake data into the 'tasks' table
     for (let i = 0; i < 10; i += 1) {
       queries.push(
-        database.query("insert into tasks(name) values (?)", [
+        database.query("insert into task(name) values (?)", [
           faker.lorem.word(),
         ])
       );
